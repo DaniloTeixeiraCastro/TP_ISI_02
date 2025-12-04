@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = TP_ISI_02.Domain
+build_property.ProjectDir = C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

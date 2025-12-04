@@ -30,7 +30,7 @@ namespace TP_ISI_02.Soap
         {
             services.AddServiceModelServices();
             services.AddServiceModelMetadata();
-            services.AddSingleton<IServiceBehavior, UseRequestHeadersForMetadataAddressBehavior>();
+            // services.AddSingleton<IServiceBehavior, UseRequestHeadersForMetadataAddressBehavior>();
 
             // Dependency Injection
             services.AddScoped<DatabaseContext>(provider => 
@@ -54,6 +54,7 @@ namespace TP_ISI_02.Soap
                 
                 var serviceMetadataBehavior = app.ApplicationServices.GetRequiredService<ServiceMetadataBehavior>();
                 serviceMetadataBehavior.HttpGetEnabled = true;
+                serviceMetadataBehavior.HttpsGetEnabled = true; // Ensure HTTPS is also enabled
             });
         }
     }

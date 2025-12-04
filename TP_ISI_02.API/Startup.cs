@@ -110,12 +110,24 @@ namespace TP_ISI_02.API
             // Initialize Database
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                var dbInitializer = scope.ServiceProvider.GetRequiredService<DbInitializer>();
-                dbInitializer.Initialize();
+                try 
+                {
+                    var dbInitializer = scope.ServiceProvider.GetRequiredService<DbInitializer>();
+                    dbInitializer.Initialize();
+                }
+                catch (Exception ex)
+                {
+                    // Log error or just ignore to allow app to start
+                    Console.WriteLine($"Database initialization failed: {ex.Message}");
+                }
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TP_ISI_02 API v1"));
+            app.UseSwaggerUI(c => 
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "TP_ISI_02 API v1");
+                c.RoutePrefix = string.Empty; // Serve Swagger UI at the app's root
+            });
 
             app.UseHttpsRedirection();
 

@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Projetos\\TP_ISI_02\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07ADAA23-FA76-4DCF-B24C-A9325843C2A5}|TP_ISI_02.Data\\TP_ISI_02.Data.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.data\\tp_isi_02.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{07ADAA23-FA76-4DCF-B24C-A9325843C2A5}|TP_ISI_02.Data\\TP_ISI_02.Data.csproj|solutionrelative:tp_isi_02.data\\tp_isi_02.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3328D1F0-D068-4BFD-AD34-D18A027001DC}|TP_ISI_02.API\\TP_ISI_02.API.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.api\\tp_isi_02.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3328D1F0-D068-4BFD-AD34-D18A027001DC}|TP_ISI_02.API\\TP_ISI_02.API.csproj|solutionrelative:tp_isi_02.api\\tp_isi_02.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.domain\\tp_isi_02.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|solutionrelative:tp_isi_02.domain\\tp_isi_02.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77E321BB-6D60-4829-B6A6-D3FBF8AC2072}|TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.soap\\tp_isi_02.soap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{77E321BB-6D60-4829-B6A6-D3FBF8AC2072}|TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj|solutionrelative:tp_isi_02.soap\\tp_isi_02.soap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|solutionrelative:tp_isi_02.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,15 +30,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TP_ISI_02.Data",
+              "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
+              "RelativeDocumentMoniker": "TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
+              "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
+              "RelativeToolTip": "TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T02:00:10.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TP_ISI_02.Domain",
+              "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
+              "RelativeDocumentMoniker": "TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
+              "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
+              "RelativeToolTip": "TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T02:00:03.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TP_ISI_02.Soap",
+              "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
+              "RelativeDocumentMoniker": "TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
+              "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
+              "RelativeToolTip": "TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T02:00:02.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TP_ISI_02.API",
+              "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\TP_ISI_02.API.csproj",
+              "RelativeDocumentMoniker": "TP_ISI_02.API\\TP_ISI_02.API.csproj",
+              "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\TP_ISI_02.API.csproj",
+              "RelativeToolTip": "TP_ISI_02.API\\TP_ISI_02.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T02:00:00.001Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "TP_ISI_02.Domain\\Class1.cs",

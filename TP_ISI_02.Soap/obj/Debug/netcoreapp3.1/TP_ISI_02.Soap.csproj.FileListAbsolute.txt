@@ -95,3 +95,4 @@ C:\Projetos\TP_ISI_02\TP_ISI_02.Soap\obj\Debug\netcoreapp3.1\TP_ISI_0.4662552F.U
 C:\Projetos\TP_ISI_02\TP_ISI_02.Soap\obj\Debug\netcoreapp3.1\TP_ISI_02.Soap.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.Soap\obj\Debug\netcoreapp3.1\TP_ISI_02.Soap.pdb
 C:\Projetos\TP_ISI_02\TP_ISI_02.Soap\obj\Debug\netcoreapp3.1\TP_ISI_02.Soap.genruntimeconfig.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Soap\obj\Debug\netcoreapp3.1\TP_ISI_02.Soap.sourcelink.json

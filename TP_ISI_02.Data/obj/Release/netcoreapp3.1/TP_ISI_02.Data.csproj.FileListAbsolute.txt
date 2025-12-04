@@ -1,0 +1,14 @@
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\bin\Release\netcoreapp3.1\TP_ISI_02.Data.deps.json
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\bin\Release\netcoreapp3.1\TP_ISI_02.Data.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\bin\Release\netcoreapp3.1\TP_ISI_02.Data.pdb
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\bin\Release\netcoreapp3.1\TP_ISI_02.Domain.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\bin\Release\netcoreapp3.1\TP_ISI_02.Domain.pdb
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.csproj.AssemblyReference.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.AssemblyInfoInputs.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.AssemblyInfo.cs
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.sourcelink.json
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_0.8EE8B995.Up2Date
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Data\obj\Release\netcoreapp3.1\TP_ISI_02.Data.pdb
