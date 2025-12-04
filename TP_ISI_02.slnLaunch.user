@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "TP_ISI_02.API\\TP_ISI_02.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

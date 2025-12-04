@@ -1,0 +1,9 @@
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\bin\Debug\netcoreapp3.1\TP_ISI_02.Domain.deps.json
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\bin\Debug\netcoreapp3.1\TP_ISI_02.Domain.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\bin\Debug\netcoreapp3.1\TP_ISI_02.Domain.pdb
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.AssemblyInfoInputs.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.AssemblyInfo.cs
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Domain\obj\Debug\netcoreapp3.1\TP_ISI_02.Domain.pdb
