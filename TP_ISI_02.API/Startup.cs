@@ -1,4 +1,5 @@
 using CoreWCF;
+using CoreWCF.Channels;
 using CoreWCF.Configuration;
 using CoreWCF.Description;
 using Microsoft.AspNetCore.Builder;
@@ -150,7 +151,10 @@ namespace TP_ISI_02.API
             app.UseServiceModel(serviceBuilder =>
             {
                 serviceBuilder.AddService<ImobiliariaSoapService>();
-                serviceBuilder.AddServiceEndpoint<ImobiliariaSoapService, IImobiliariaSoapService>(new BasicHttpBinding(), "/soap");
+                
+                // Configure Binding for HTTPS
+                var binding = new BasicHttpBinding(BasicHttpSecurityMode.Transport);
+                serviceBuilder.AddServiceEndpoint<ImobiliariaSoapService, IImobiliariaSoapService>(binding, "/soap");
                 
                 var serviceMetadataBehavior = app.ApplicationServices.GetRequiredService<ServiceMetadataBehavior>();
                 serviceMetadataBehavior.HttpGetEnabled = true;
