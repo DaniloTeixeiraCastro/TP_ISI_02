@@ -45,6 +45,9 @@ namespace TP_ISI_02.API
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<DbInitializer>();
 
+            // External Services
+            services.AddHttpClient<IWeatherService, OpenWeatherService>();
+
             // JWT Authentication
             var secretKey = Configuration["Jwt:SecretKey"];
             var key = Encoding.UTF8.GetBytes(secretKey);
