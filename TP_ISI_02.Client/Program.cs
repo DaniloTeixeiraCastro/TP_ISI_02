@@ -65,6 +65,10 @@ namespace TP_ISI_02.Client
             }
         }
 
+        /// <summary>
+        /// Obtém e exibe a lista de imóveis da API.
+        /// </summary>
+        /// <param name="client">Instância do cliente API autenticado.</param>
         static async Task ListarImoveis(ApiClient client)
         {
             Console.WriteLine("\n--- Lista de Imóveis ---");
@@ -83,6 +87,10 @@ namespace TP_ISI_02.Client
             }
         }
 
+        /// <summary>
+        /// Obtém e exibe a meteorologia para uma cidade.
+        /// </summary>
+        /// <param name="client">Instância do cliente API autenticado.</param>
         static async Task VerMeteorologia(ApiClient client)
         {
             Console.Write("\nCidade: ");

@@ -16,17 +16,32 @@ namespace TP_ISI_02.API.Services
         Task<User> RegisterAsync(string username, string password, string email);
     }
 
+    /// <summary>
+    /// Serviço responsável pela autenticação e registo de utilizadores.
+    /// Implementa a lógica de hashing de passwords e geração de tokens JWT.
+    /// </summary>
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
 
+        /// <summary>
+        /// Construtor do serviço de autenticação.
+        /// </summary>
+        /// <param name="userRepository">Repositório de utilizadores.</param>
+        /// <param name="configuration">Configuração da aplicação (para acesso a chaves secretas).</param>
         public AuthService(IUserRepository userRepository, IConfiguration configuration)
         {
             _userRepository = userRepository;
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Valida as credenciais de um utilizador e gera um token JWT se forem válidas.
+        /// </summary>
+        /// <param name="username">Nome de utilizador.</param>
+        /// <param name="password">Palavra-passe em texto limpo.</param>
+        /// <returns>Token JWT se o login for bem-sucedido, ou null caso contrário.</returns>
         public async Task<string> LoginAsync(string username, string password)
         {
             var user = await _userRepository.GetByUsernameAsync(username);
@@ -37,6 +52,13 @@ namespace TP_ISI_02.API.Services
             return GenerateToken(user);
         }
 
+        /// <summary>
+        /// Regista um novo utilizador no sistema.
+        /// </summary>
+        /// <param name="username">Nome de utilizador desejado.</param>
+        /// <param name="password">Palavra-passe (será guardada como hash).</param>
+        /// <param name="email">Endereço de email.</param>
+        /// <returns>O utilizador criado.</returns>
         public async Task<User> RegisterAsync(string username, string password, string email)
         {
             var existingUser = await _userRepository.GetByUsernameAsync(username);

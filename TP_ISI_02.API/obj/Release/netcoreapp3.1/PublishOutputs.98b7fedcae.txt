@@ -15,6 +15,7 @@ C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Microso
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

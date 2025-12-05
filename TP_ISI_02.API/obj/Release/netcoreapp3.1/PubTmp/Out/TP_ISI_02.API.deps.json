@@ -33,6 +33,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.32",
+          "Newtonsoft.Json": "13.0.4",
           "Swashbuckle.AspNetCore": "5.6.3",
           "TP_ISI_02.Data": "1.0.0",
           "TP_ISI_02.Domain": "1.0.0",
@@ -514,6 +515,17 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.6.3": {
@@ -2493,6 +2505,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.6.3": {
       "type": "package",

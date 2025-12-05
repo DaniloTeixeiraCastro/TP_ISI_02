@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP_ISI_02.Soap")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5138012ae56e5a5d5dc9d488d5e7ed713839a883")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf851d3357a259e413b7fe98d980a6c6a367d9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP_ISI_02.Soap")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP_ISI_02.Soap")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

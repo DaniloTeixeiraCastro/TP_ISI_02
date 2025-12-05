@@ -54,3 +54,4 @@ C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\TP_ISI_0.D4425908.
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\TP_ISI_02.API.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\TP_ISI_02.API.pdb
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\TP_ISI_02.API.genruntimeconfig.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.API\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll

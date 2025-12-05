@@ -8,6 +8,9 @@ using Newtonsoft.Json;
 
 namespace TP_ISI_02.Client
 {
+    /// <summary>
+    /// Cliente HTTP responsável pela comunicação com a API REST na Cloud.
+    /// </summary>
     public class ApiClient
     {
         private readonly HttpClient _httpClient;
@@ -16,12 +19,21 @@ namespace TP_ISI_02.Client
         // URL da API na Cloud
         private const string BaseUrl = "https://tpisi0220251130195049-crfgeafnevdufhas.francecentral-01.azurewebsites.net/";
 
+        /// <summary>
+        /// Inicializa uma nova instância do cliente API.
+        /// </summary>
         public ApiClient()
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri(BaseUrl);
         }
 
+        /// <summary>
+        /// Realiza o login na API e guarda o token de autenticação.
+        /// </summary>
+        /// <param name="username">Nome de utilizador.</param>
+        /// <param name="password">Palavra-passe.</param>
+        /// <returns>Verdadeiro se o login for bem-sucedido.</returns>
         public async Task<bool> LoginAsync(string username, string password)
         {
             var loginRequest = new LoginRequest { Username = username, Password = password };

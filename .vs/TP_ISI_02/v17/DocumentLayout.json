@@ -35,7 +35,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TP_ISI_02.Data",
+              "Title": "TP_ISI_02.Data.csproj",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
               "RelativeDocumentMoniker": "TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
@@ -48,7 +48,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TP_ISI_02.Domain",
+              "Title": "TP_ISI_02.Domain.csproj",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
               "RelativeDocumentMoniker": "TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
@@ -61,7 +61,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TP_ISI_02.Soap",
+              "Title": "TP_ISI_02.Soap.csproj",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
               "RelativeDocumentMoniker": "TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
@@ -74,7 +74,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TP_ISI_02.API",
+              "Title": "TP_ISI_02.API.csproj",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\TP_ISI_02.API.csproj",
               "RelativeDocumentMoniker": "TP_ISI_02.API\\TP_ISI_02.API.csproj",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\TP_ISI_02.API.csproj",
@@ -83,10 +83,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-04T02:00:00.001Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -98,8 +94,11 @@
               "RelativeToolTip": "TP_ISI_02.Domain\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T00:27:07.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T00:27:07.282Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
