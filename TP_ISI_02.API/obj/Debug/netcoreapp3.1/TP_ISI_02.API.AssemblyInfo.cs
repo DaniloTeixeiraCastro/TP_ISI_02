@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP_ISI_02.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf851d3357a259e413b7fe98d980a6c6a367d9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b54f20db86e3bee2c0efaade1d3d62f5beba13b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP_ISI_02.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP_ISI_02.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
