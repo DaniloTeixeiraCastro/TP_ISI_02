@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using TP_ISI_02.Domain.Models;
 
 namespace TP_ISI_02.Client
 {
@@ -42,6 +43,7 @@ namespace TP_ISI_02.Client
                     Console.WriteLine("\n--- MENU ---");
                     Console.WriteLine("1. Listar Imóveis");
                     Console.WriteLine("2. Ver Meteorologia 🌦️");
+                    Console.WriteLine("3. Marcar Visita 📅");
                     Console.WriteLine("0. Sair");
                     Console.Write("Opção: ");
                     var option = Console.ReadLine();
@@ -53,6 +55,9 @@ namespace TP_ISI_02.Client
                             break;
                         case "2":
                             await VerMeteorologia(client);
+                            break;
+                        case "3":
+                            await MarcarVisita(client);
                             break;
                         case "0":
                             exit = true;
@@ -105,6 +110,54 @@ namespace TP_ISI_02.Client
                 Console.WriteLine($"🌡️ Temperatura: {weather.Temperature}°C");
                 Console.WriteLine($"☁️ Estado: {weather.Description}");
                 Console.WriteLine($"💧 Humidade: {weather.Humidity}%");
+            }
+        }
+
+        /// <summary>
+        /// Solicita dados ao utilizador e cria um novo evento (visita).
+        /// </summary>
+        static async Task MarcarVisita(ApiClient client)
+        {
+            Console.WriteLine("\n--- Marcar Nova Visita ---");
+            
+            Console.Write("ID do Imóvel: ");
+            if (!int.TryParse(Console.ReadLine(), out int imovelId))
+            {
+                Console.WriteLine("ID inválido.");
+                return;
+            }
+
+            Console.Write("Descrição da Visita: ");
+            string descricao = Console.ReadLine();
+
+            Console.WriteLine("Data e Hora (YYYY-MM-DD HH:mm): "); 
+            // Ex: 2025-12-10 14:30
+            string dataInput = Console.ReadLine();
+            
+            if (!DateTime.TryParse(dataInput, out DateTime dataEvento))
+            {
+                Console.WriteLine("Data inválida. Use o formato YYYY-MM-DD HH:mm");
+                return;
+            }
+
+            var novoEvento = new Evento
+            {
+                ImovelId = imovelId,
+                Descricao = descricao,
+                Data = dataEvento,
+                DataCriacao = DateTime.UtcNow
+            };
+
+            Console.WriteLine("A criar evento...");
+            bool sucesso = await client.CreateEventoAsync(novoEvento);
+
+            if (sucesso)
+            {
+                Console.WriteLine("✅ Visita marcada com sucesso! (Verifique o Google Calendar)");
+            }
+            else
+            {
+                Console.WriteLine("❌ Falha ao marcar visita.");
             }
         }
     }

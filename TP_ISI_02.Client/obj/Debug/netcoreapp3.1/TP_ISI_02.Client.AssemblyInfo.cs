@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP_ISI_02.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b99eec6c519825a48f43f95d412e446c5e011e39")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+225d44d28d40afa7a0265aa14c8bf9f9d56f6d91")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP_ISI_02.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP_ISI_02.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

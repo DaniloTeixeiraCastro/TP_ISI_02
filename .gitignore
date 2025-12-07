@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+
+# Project Specific
+credentials.json
+client_secret*.json
+
+# OS generated
+.DS_Store
+Thumbs.db

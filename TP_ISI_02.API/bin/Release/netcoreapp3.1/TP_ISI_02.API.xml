@@ -105,11 +105,12 @@
             Controlador responsável pela gestão de eventos (visitas, reuniões) via API REST.
             </summary>
         </member>
-        <member name="M:TP_ISI_02.API.Controllers.EventosController.#ctor(TP_ISI_02.Domain.Interfaces.IEventoRepository)">
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.#ctor(TP_ISI_02.Domain.Interfaces.IEventoRepository,TP_ISI_02.Domain.Interfaces.IGoogleCalendarService)">
             <summary>
             Construtor do controlador de eventos.
             </summary>
             <param name="repository">Repositório de eventos.</param>
+            <param name="calendarService">Serviço de integração com Google Calendar.</param>
         </member>
         <member name="M:TP_ISI_02.API.Controllers.EventosController.GetEventos">
             <summary>
@@ -133,7 +134,7 @@
         </member>
         <member name="M:TP_ISI_02.API.Controllers.EventosController.PostEvento(TP_ISI_02.Domain.Models.Evento)">
             <summary>
-            Cria um novo evento.
+            Cria um novo evento e agenda no Google Calendar.
             </summary>
             <param name="evento">Dados do novo evento.</param>
             <returns>O evento criado.</returns>

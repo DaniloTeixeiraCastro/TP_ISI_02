@@ -19,12 +19,12 @@
       "RelativeMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|solutionrelative:tp_isi_02.domain\\tp_isi_02.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|c:\\projetos\\tp_isi_02\\tp_isi_02.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D198046F-E3C5-43E0-A34A-B3E445E0D1F0}|TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj|solutionrelative:tp_isi_02.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TP_ISI_02.Domain\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "TP_ISI_02.API\\Startup.cs",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\Startup.cs",
               "RelativeToolTip": "TP_ISI_02.API\\Startup.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAmwJsAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAmwJsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T02:07:12.15Z",
               "EditorCaption": ""
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "TP_ISI_02.Soap.csproj",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
               "RelativeDocumentMoniker": "TP_ISI_02.Soap\\TP_ISI_02.Soap.csproj",
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\Class1.cs",
               "RelativeDocumentMoniker": "TP_ISI_02.Domain\\Class1.cs",

@@ -16,14 +16,17 @@ namespace TP_ISI_02.API.Controllers
     public class EventosController : ControllerBase
     {
         private readonly IEventoRepository _repository;
+        private readonly IGoogleCalendarService _calendarService;
 
         /// <summary>
         /// Construtor do controlador de eventos.
         /// </summary>
         /// <param name="repository">Repositório de eventos.</param>
-        public EventosController(IEventoRepository repository)
+        /// <param name="calendarService">Serviço de integração com Google Calendar.</param>
+        public EventosController(IEventoRepository repository, IGoogleCalendarService calendarService)
         {
             _repository = repository;
+            _calendarService = calendarService;
         }
 
         /// <summary>
@@ -66,7 +69,7 @@ namespace TP_ISI_02.API.Controllers
         }
 
         /// <summary>
-        /// Cria um novo evento.
+        /// Cria um novo evento e agenda no Google Calendar.
         /// </summary>
         /// <param name="evento">Dados do novo evento.</param>
         /// <returns>O evento criado.</returns>
@@ -74,6 +77,13 @@ namespace TP_ISI_02.API.Controllers
         public async Task<ActionResult<Evento>> PostEvento(Evento evento)
         {
             var novoEvento = await _repository.AddAsync(evento);
+            
+            // Integrate with Google Calendar (Fire and forget, or wait? Let's wait to return result)
+            var calendarResult = await _calendarService.CreateEventAsync(novoEvento);
+            
+            // Optionally, we could append the calendar result to the response or log it.
+            // For now, we just proceed.
+            
             return CreatedAtAction(nameof(GetEvento), new { id = novoEvento.Id }, novoEvento);
         }
 

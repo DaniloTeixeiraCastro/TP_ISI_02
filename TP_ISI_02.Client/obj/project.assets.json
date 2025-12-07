@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "TP_ISI_02.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TP_ISI_02.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TP_ISI_02.Domain.dll": {}
+        }
       }
     }
   },
@@ -47,11 +57,17 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "TP_ISI_02.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TP_ISI_02.Domain/TP_ISI_02.Domain.csproj",
+      "msbuildProject": "../TP_ISI_02.Domain/TP_ISI_02.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "TP_ISI_02.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -85,7 +101,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

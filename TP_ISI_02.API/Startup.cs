@@ -85,7 +85,8 @@ namespace TP_ISI_02.API
             // Services
             services.AddScoped<IAuthService, AuthService>();
             services.AddHttpClient<IWeatherService, OpenWeatherService>();
-            services.AddScoped<IImobiliariaSoapService, ImobiliariaSoapService>(); // Register SOAP Service Implementation
+            services.AddScoped<IImobiliariaSoapService, ImobiliariaSoapService>();
+            services.AddScoped<IGoogleCalendarService, GoogleCalendarService>(); // Digital Integration
 
             // JWT Authentication
             var key = Encoding.ASCII.GetBytes(Configuration["Jwt:SecretKey"]);

@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using TP_ISI_02.Domain.Models;
 
 namespace TP_ISI_02.Client
 {
@@ -123,6 +124,38 @@ namespace TP_ISI_02.Client
             {
                 Console.WriteLine($"Erro de Ligação: {ex.Message}");
                 return null;
+            }
+        }
+
+        public async Task<bool> CreateEventoAsync(Evento evento)
+        {
+            if (string.IsNullOrEmpty(_authToken))
+            {
+                Console.WriteLine("Erro: Não autenticado.");
+                return false;
+            }
+
+            var json = JsonConvert.SerializeObject(evento);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            try
+            {
+                var response = await _httpClient.PostAsync("api/Eventos", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine($"Erro ao criar evento: {response.StatusCode}");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro de Ligação: {ex.Message}");
+                return false;
             }
         }
     }

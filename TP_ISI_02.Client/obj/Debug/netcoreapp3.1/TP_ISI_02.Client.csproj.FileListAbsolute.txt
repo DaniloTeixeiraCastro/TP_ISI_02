@@ -15,3 +15,5 @@ C:\Projetos\TP_ISI_02\TP_ISI_02.Client\obj\Debug\netcoreapp3.1\TP_ISI_0.986B4F2F
 C:\Projetos\TP_ISI_02\TP_ISI_02.Client\obj\Debug\netcoreapp3.1\TP_ISI_02.Client.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.Client\obj\Debug\netcoreapp3.1\TP_ISI_02.Client.pdb
 C:\Projetos\TP_ISI_02\TP_ISI_02.Client\obj\Debug\netcoreapp3.1\TP_ISI_02.Client.genruntimeconfig.cache
+C:\Projetos\TP_ISI_02\TP_ISI_02.Client\bin\Debug\netcoreapp3.1\TP_ISI_02.Domain.dll
+C:\Projetos\TP_ISI_02\TP_ISI_02.Client\bin\Debug\netcoreapp3.1\TP_ISI_02.Domain.pdb

@@ -34,6 +34,8 @@
           "BCrypt.Net-Next": "4.0.3",
           "CoreWCF.Http": "1.0.0",
           "CoreWCF.Primitives": "1.0.0",
+          "Google.Apis.Auth": "1.73.0",
+          "Google.Apis.Calendar.v3": "1.72.0.3953",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.32",
           "Newtonsoft.Json": "13.0.4",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -382,6 +384,65 @@
         },
         "compile": {
           "lib/netstandard2.0/CoreWCF.Primitives.dll": {}
+        }
+      },
+      "Google.Apis/1.73.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.73.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.73.0.0",
+            "fileVersion": "1.73.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.73.0": {
+        "dependencies": {
+          "Google.Apis": "1.73.0",
+          "Google.Apis.Core": "1.73.0",
+          "System.Management": "7.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.73.0.0",
+            "fileVersion": "1.73.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Calendar.v3/1.72.0.3953": {
+        "dependencies": {
+          "Google.Apis": "1.73.0",
+          "Google.Apis.Auth": "1.73.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Calendar.v3.dll": {
+            "assemblyVersion": "1.72.0.3953",
+            "fileVersion": "1.72.0.3953"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Calendar.v3.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.73.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.73.0.0",
+            "fileVersion": "1.73.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.32": {
@@ -799,6 +860,17 @@
         }
       },
       "System.Buffers/4.5.0": {},
+      "System.CodeDom/7.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.4",
@@ -992,6 +1064,20 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Management/7.0.2": {
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.723.27404"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Management.dll": {}
         }
       },
       "System.Memory/4.5.1": {},
@@ -3083,6 +3169,34 @@
       "path": "corewcf.primitives/1.0.0",
       "hashPath": "corewcf.primitives.1.0.0.nupkg.sha512"
     },
+    "Google.Apis/1.73.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TnCjEyV2aCLQ6Zl40OCbEJULDuEkEWc6C/g81KYw5l1PqGo+G7pFZrV+YH8XgUL0JRUanz+IrUp8SsKF4dzkqg==",
+      "path": "google.apis/1.73.0",
+      "hashPath": "google.apis.1.73.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.73.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wEu12uhnRv3zrPBSqv4E2vPH6lYLtc1RPAnU9MJRCMFlBVwZ7Lnq3NfbYXi6VG7EurkYInTaMpeBZkbM/HrAog==",
+      "path": "google.apis.auth/1.73.0",
+      "hashPath": "google.apis.auth.1.73.0.nupkg.sha512"
+    },
+    "Google.Apis.Calendar.v3/1.72.0.3953": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DBmDXXFHDzXKl7fPJ0S91u6gqc68SOnoVhYA+IHtxFvCYodd9CCNXWgTfyql8XAHuFHRuEzK6YRegoMhlFpexw==",
+      "path": "google.apis.calendar.v3/1.72.0.3953",
+      "hashPath": "google.apis.calendar.v3.1.72.0.3953.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.73.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vSc7CY4KCP7HE4QTElDx/ExnGLbg9kXb89MS6cdvI+0D4sxvTYb16vGtXmF2jSDMV3iDmykSXdIUPTz8TDS6gg==",
+      "path": "google.apis.core/1.73.0",
+      "hashPath": "google.apis.core.1.73.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.32": {
       "type": "package",
       "serviceable": true,
@@ -3405,6 +3519,13 @@
       "path": "system.buffers/4.5.0",
       "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
+    "System.CodeDom/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "path": "system.codedom/7.0.0",
+      "hashPath": "system.codedom.7.0.0.nupkg.sha512"
+    },
     "System.Collections/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3502,6 +3623,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Management/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/qEUN91mP/MUQmJnM5y5BdT7ZoPuVrtxnFlbJ8a3kBJGhe2wCzBfnPFtK2wTtEEcf3DMGR9J00GZZfg6HRI6yA==",
+      "path": "system.management/7.0.2",
+      "hashPath": "system.management.7.0.2.nupkg.sha512"
     },
     "System.Memory/4.5.1": {
       "type": "package",

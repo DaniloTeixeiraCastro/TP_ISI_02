@@ -10,7 +10,7 @@ namespace TP_ISI_02.API.Services
     public class OpenWeatherService : IWeatherService
     {
         private readonly HttpClient _httpClient;
-        private const string ApiKey = "b4e56d454f9ddc1a5b66102f99f28fa2"; // Key from professor's example
+        private const string ApiKey = "b4e56d454f9ddc1a5b66102f99f28fa2"; // Chave exemplo do prof 
 
         public OpenWeatherService(HttpClient httpClient)
         {
