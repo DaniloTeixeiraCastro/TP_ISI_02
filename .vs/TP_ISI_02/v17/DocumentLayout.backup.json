@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "TP_ISI_02.API\\Startup.cs",
               "ToolTip": "C:\\Projetos\\TP_ISI_02\\TP_ISI_02.API\\Startup.cs",
               "RelativeToolTip": "TP_ISI_02.API\\Startup.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAmwJsAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAmwJsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T02:07:12.15Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "TP_ISI_02.Data\\TP_ISI_02.Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-04T02:00:10.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T02:00:10.004Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "TP_ISI_02.Domain\\TP_ISI_02.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-04T02:00:03.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T02:00:03.865Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "TP_ISI_02.API\\TP_ISI_02.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-04T02:00:00.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T02:00:00.001Z"
             },
             {
               "$type": "Document",

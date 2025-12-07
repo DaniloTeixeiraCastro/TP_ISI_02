@@ -7,6 +7,9 @@ using TP_ISI_02.Domain.Models;
 
 namespace TP_ISI_02.API.Controllers
 {
+    /// <summary>
+    /// Controlador responsável pela gestão de eventos (visitas, reuniões) via API REST.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
@@ -14,11 +17,19 @@ namespace TP_ISI_02.API.Controllers
     {
         private readonly IEventoRepository _repository;
 
+        /// <summary>
+        /// Construtor do controlador de eventos.
+        /// </summary>
+        /// <param name="repository">Repositório de eventos.</param>
         public EventosController(IEventoRepository repository)
         {
             _repository = repository;
         }
 
+        /// <summary>
+        /// Obtém a lista de todos os eventos.
+        /// </summary>
+        /// <returns>Lista de eventos.</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Evento>>> GetEventos()
         {
@@ -26,6 +37,11 @@ namespace TP_ISI_02.API.Controllers
             return Ok(eventos);
         }
 
+        /// <summary>
+        /// Obtém um evento específico pelo seu ID.
+        /// </summary>
+        /// <param name="id">ID do evento.</param>
+        /// <returns>Detalhes do evento.</returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Evento>> GetEvento(int id)
         {
@@ -37,6 +53,11 @@ namespace TP_ISI_02.API.Controllers
             return Ok(evento);
         }
 
+        /// <summary>
+        /// Obtém todos os eventos associados a um imóvel específico.
+        /// </summary>
+        /// <param name="imovelId">ID do imóvel.</param>
+        /// <returns>Lista de eventos relacionados com o imóvel.</returns>
         [HttpGet("imovel/{imovelId}")]
         public async Task<ActionResult<IEnumerable<Evento>>> GetEventosByImovel(int imovelId)
         {
@@ -44,6 +65,11 @@ namespace TP_ISI_02.API.Controllers
             return Ok(eventos);
         }
 
+        /// <summary>
+        /// Cria um novo evento.
+        /// </summary>
+        /// <param name="evento">Dados do novo evento.</param>
+        /// <returns>O evento criado.</returns>
         [HttpPost]
         public async Task<ActionResult<Evento>> PostEvento(Evento evento)
         {
@@ -51,6 +77,12 @@ namespace TP_ISI_02.API.Controllers
             return CreatedAtAction(nameof(GetEvento), new { id = novoEvento.Id }, novoEvento);
         }
 
+        /// <summary>
+        /// Atualiza um evento existente.
+        /// </summary>
+        /// <param name="id">ID do evento.</param>
+        /// <param name="evento">Novos dados do evento.</param>
+        /// <returns>Sem conteúdo se sucesso.</returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEvento(int id, Evento evento)
         {
@@ -68,6 +100,11 @@ namespace TP_ISI_02.API.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Remove um evento do sistema.
+        /// </summary>
+        /// <param name="id">ID do evento.</param>
+        /// <returns>Sem conteúdo se sucesso.</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEvento(int id)
         {

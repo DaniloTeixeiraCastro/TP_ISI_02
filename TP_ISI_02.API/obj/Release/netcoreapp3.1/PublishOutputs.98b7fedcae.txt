@@ -84,3 +84,4 @@ C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\TP_ISI_
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\TP_ISI_02.Domain.dll
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\TP_ISI_02.Data.pdb
 C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\TP_ISI_02.Domain.pdb
+C:\Projetos\TP_ISI_02\TP_ISI_02.API\obj\Release\netcoreapp3.1\PubTmp\Out\TP_ISI_02.API.xml

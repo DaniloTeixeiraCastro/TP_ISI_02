@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP_ISI_02.API</name>
+    </assembly>
+    <members>
+        <member name="T:TP_ISI_02.API.Controllers.AuthController">
+            <summary>
+            Controlador responsável pela autenticação e registo de utilizadores.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.AuthController.#ctor(TP_ISI_02.API.Services.IAuthService)">
+            <summary>
+            Construtor do serviço de autenticação.
+            </summary>
+            <param name="authService">Serviço de autenticação injetado.</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.AuthController.Login(TP_ISI_02.API.Controllers.LoginRequest)">
+            <summary>
+            Realiza o login (autenticação) de um utilizador.
+            </summary>
+            <param name="request">Credenciais (username e password).</param>
+            <returns>Token JWT se as credenciais forem válidas.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.AuthController.Register(TP_ISI_02.API.Controllers.RegisterRequest)">
+            <summary>
+            Regista um novo utilizador no sistema.
+            </summary>
+            <param name="request">Dados do novo utilizador.</param>
+            <returns>Dados do utilizador criado.</returns>
+        </member>
+        <member name="T:TP_ISI_02.API.Controllers.LoginRequest">
+            <summary>
+            Modelo para o pedido de login.
+            </summary>
+        </member>
+        <member name="P:TP_ISI_02.API.Controllers.LoginRequest.Username">
+            <summary>Nome de utilizador.</summary>
+        </member>
+        <member name="P:TP_ISI_02.API.Controllers.LoginRequest.Password">
+            <summary>Palavra-passe.</summary>
+        </member>
+        <member name="T:TP_ISI_02.API.Controllers.RegisterRequest">
+            <summary>
+            Modelo para o pedido de registo.
+            </summary>
+        </member>
+        <member name="P:TP_ISI_02.API.Controllers.RegisterRequest.Username">
+            <summary>Nome de utilizador desejado.</summary>
+        </member>
+        <member name="P:TP_ISI_02.API.Controllers.RegisterRequest.Password">
+            <summary>Palavra-passe.</summary>
+        </member>
+        <member name="P:TP_ISI_02.API.Controllers.RegisterRequest.Email">
+            <summary>Email de contacto.</summary>
+        </member>
+        <member name="T:TP_ISI_02.API.Controllers.ClientesController">
+            <summary>
+            Controlador responsável pela gestão de clientes via API REST.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.#ctor(TP_ISI_02.Domain.Interfaces.IClienteRepository)">
+            <summary>
+            Construtor do controlador de clientes.
+            </summary>
+            <param name="repository">Repositório de clientes.</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.GetClientes">
+            <summary>
+            Obtém a lista de todos os clientes.
+            </summary>
+            <returns>Lista de clientes.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.GetCliente(System.Int32)">
+            <summary>
+            Obtém um cliente pelo seu ID.
+            </summary>
+            <param name="id">ID do cliente.</param>
+            <returns>Dados do cliente.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.PostCliente(TP_ISI_02.Domain.Models.Cliente)">
+            <summary>
+            Cria um novo cliente.
+            </summary>
+            <param name="cliente">Dados do novo cliente.</param>
+            <returns>Cliente criado.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.PutCliente(System.Int32,TP_ISI_02.Domain.Models.Cliente)">
+            <summary>
+            Atualiza os dados de um cliente existente.
+            </summary>
+            <param name="id">ID do cliente.</param>
+            <param name="cliente">Novos dados do cliente.</param>
+            <returns>Sem conteúdo se bem sucedido.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ClientesController.DeleteCliente(System.Int32)">
+            <summary>
+            Remove um cliente do sistema.
+            </summary>
+            <param name="id">ID do cliente.</param>
+            <returns>Sem conteúdo se bem sucedido.</returns>
+        </member>
+        <member name="T:TP_ISI_02.API.Controllers.EventosController">
+            <summary>
+            Controlador responsável pela gestão de eventos (visitas, reuniões) via API REST.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.#ctor(TP_ISI_02.Domain.Interfaces.IEventoRepository)">
+            <summary>
+            Construtor do controlador de eventos.
+            </summary>
+            <param name="repository">Repositório de eventos.</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.GetEventos">
+            <summary>
+            Obtém a lista de todos os eventos.
+            </summary>
+            <returns>Lista de eventos.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.GetEvento(System.Int32)">
+            <summary>
+            Obtém um evento específico pelo seu ID.
+            </summary>
+            <param name="id">ID do evento.</param>
+            <returns>Detalhes do evento.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.GetEventosByImovel(System.Int32)">
+            <summary>
+            Obtém todos os eventos associados a um imóvel específico.
+            </summary>
+            <param name="imovelId">ID do imóvel.</param>
+            <returns>Lista de eventos relacionados com o imóvel.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.PostEvento(TP_ISI_02.Domain.Models.Evento)">
+            <summary>
+            Cria um novo evento.
+            </summary>
+            <param name="evento">Dados do novo evento.</param>
+            <returns>O evento criado.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.PutEvento(System.Int32,TP_ISI_02.Domain.Models.Evento)">
+            <summary>
+            Atualiza um evento existente.
+            </summary>
+            <param name="id">ID do evento.</param>
+            <param name="evento">Novos dados do evento.</param>
+            <returns>Sem conteúdo se sucesso.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.EventosController.DeleteEvento(System.Int32)">
+            <summary>
+            Remove um evento do sistema.
+            </summary>
+            <param name="id">ID do evento.</param>
+            <returns>Sem conteúdo se sucesso.</returns>
+        </member>
+        <member name="T:TP_ISI_02.API.Controllers.ImoveisController">
+            <summary>
+            Controlador responsável pela gestão de imóveis via API REST.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.#ctor(TP_ISI_02.Domain.Interfaces.IImovelRepository)">
+            <summary>
+            Construtor do controlador de imóveis.
+            </summary>
+            <param name="repository">Injeção de dependência do repositório de imóveis.</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.GetImoveis">
+            <summary>
+            Obtém a lista completa de imóveis.
+            </summary>
+            <returns>Uma lista de imóveis.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.GetImovel(System.Int32)">
+            <summary>
+            Obtém os detalhes de um imóvel específico.
+            </summary>
+            <param name="id">O identificador do imóvel.</param>
+            <returns>O imóvel solicitado ou NotFound se não existir.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.PostImovel(TP_ISI_02.Domain.Models.Imovel)">
+            <summary>
+            Cria um novo imóvel. Requer autenticação.
+            </summary>
+            <param name="imovel">Os dados do novo imóvel.</param>
+            <returns>O imóvel criado.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.PutImovel(System.Int32,TP_ISI_02.Domain.Models.Imovel)">
+            <summary>
+            Atualiza um imóvel existente. Requer autenticação.
+            </summary>
+            <param name="id">O identificador do imóvel a atualizar.</param>
+            <param name="imovel">Os novos dados do imóvel.</param>
+            <returns>NoContent se bem-sucedido, ou erro correspondente.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Controllers.ImoveisController.DeleteImovel(System.Int32)">
+            <summary>
+            Remove um imóvel. Requer autenticação.
+            </summary>
+            <param name="id">O identificador do imóvel a remover.</param>
+            <returns>NoContent se bem-sucedido.</returns>
+        </member>
+        <member name="T:TP_ISI_02.API.Services.AuthService">
+            <summary>
+            Serviço responsável pela autenticação e registo de utilizadores.
+            Implementa a lógica de hashing de passwords e geração de tokens JWT.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.AuthService.#ctor(TP_ISI_02.Domain.Interfaces.IUserRepository,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor do serviço de autenticação.
+            </summary>
+            <param name="userRepository">Repositório de utilizadores.</param>
+            <param name="configuration">Configuração da aplicação (para acesso a chaves secretas).</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.AuthService.LoginAsync(System.String,System.String)">
+            <summary>
+            Valida as credenciais de um utilizador e gera um token JWT se forem válidas.
+            </summary>
+            <param name="username">Nome de utilizador.</param>
+            <param name="password">Palavra-passe em texto limpo.</param>
+            <returns>Token JWT se o login for bem-sucedido, ou null caso contrário.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.AuthService.RegisterAsync(System.String,System.String,System.String)">
+            <summary>
+            Regista um novo utilizador no sistema.
+            </summary>
+            <param name="username">Nome de utilizador desejado.</param>
+            <param name="password">Palavra-passe (será guardada como hash).</param>
+            <param name="email">Endereço de email.</param>
+            <returns>O utilizador criado.</returns>
+        </member>
+        <member name="T:TP_ISI_02.API.Services.Soap.ImobiliariaSoapService">
+            <summary>
+            Implementação do serviço SOAP para gestão imobiliária.
+            Garante a interoperabilidade com sistemas baseados em XML.
+            </summary>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.Soap.ImobiliariaSoapService.#ctor(TP_ISI_02.Domain.Interfaces.IImovelRepository)">
+            <summary>
+            Construtor do serviço SOAP.
+            </summary>
+            <param name="imovelRepository">Repositório de imóveis partilhado com a API REST.</param>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.Soap.ImobiliariaSoapService.GetImoveis">
+            <summary>
+            Obtém a lista de todos os imóveis via SOAP.
+            </summary>
+            <returns>Lista de imóveis.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.Soap.ImobiliariaSoapService.GetImovel(System.Int32)">
+            <summary>
+            Obtém os detalhes de um imóvel específico via SOAP.
+            </summary>
+            <param name="id">Identificador do imóvel.</param>
+            <returns>O imóvel solicitado.</returns>
+        </member>
+        <member name="M:TP_ISI_02.API.Services.Soap.ImobiliariaSoapService.CreateImovel(TP_ISI_02.Domain.Models.Imovel)">
+            <summary>
+            Cria um novo imóvel via SOAP.
+            </summary>
+            <param name="imovel">Dados do imóvel.</param>
+            <returns>O imóvel criado.</returns>
+        </member>
+    </members>
+</doc>
